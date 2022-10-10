@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 5</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Realiza un programa en Python, que pida números mientras no se ingrese uno negativo. Al final, se
-        debe mostrar la suma de los números ingresados.
+    <h1 class="titulo">Crear un programa que permita al usuario ingresar los montos de las compras de un cliente (se
+        desconoce la cantidad de datos que cargará, la cual puede cambiar en cada ejecución), cortando el
+        ingreso de datos cuando el usuario ingrese el monto 0.
+        Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al
+        finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $10000,
+        se le debe aplicar un 10% de descuento.
     </h1>
     <form id="form" class="form">
         <div class="div-form">
-            <h3 class="subtitulo">Ingrese el numero 1:</h3>
-            <input type="number" name="numero1" class="numero" id="numero1" oninput="this.value = this.value.replace(/[^0-9.]/g, '')" required readonly>
-        </div>
-        <div class="div-form">
-            <h3 class="subtitulo">Ingrese el numero 2:</h3>
-            <input type="number" name="numero2" class="numero" id="numero2" oninput="this.value = this.value.replace(/[^0-9.]/g, '')" required readonly>
+            <h3 class="subtitulo">Ingrese el monto de la venta</h3>
+            <input type="number" name="monto" class="numero" id="numero1"  required readonly>
         </div>
         <div class="div-form">
             <h3 class="subtitulo">Enviar datos</h3>
@@ -34,7 +35,5 @@
             </div>
         </form>
     </div>
-    
-    <script src="main.js"></script>
 </body>
 </html>

@@ -4,13 +4,13 @@
 }
 body{
     margin: 20px;
-    background: linear-gradient(#8ecae6,#219ebc, #023047);
+    background: radial-gradient(#8ecae6,#219ebc, #023047);
     height: 95.8vh;
 }
 .titulo{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 .form{
     display: flex;
