@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Realiza un programa en Python, que pida números mientras no se ingrese uno negativo. Al final, se
+        debe mostrar la suma de los números ingresados.
+    </h1>
+    <form id="form" class="form">
+        <div class="div-form">
+            <h3 class="subtitulo">Ingrese el numero 1:</h3>
+            <input type="number" name="numero1" class="numero" id="numero1" oninput="this.value = this.value.replace(/[^0-9.]/g, '')" required readonly>
+        </div>
+        <div class="div-form">
+            <h3 class="subtitulo">Ingrese el numero 2:</h3>
+            <input type="number" name="numero2" class="numero" id="numero2" oninput="this.value = this.value.replace(/[^0-9.]/g, '')" required readonly>
+        </div>
+        <div class="div-form">
+            <h3 class="subtitulo">Enviar datos</h3>
+            <input type="submit" name="boton" id="boton" class="boton" disabled>
+        </div>        
+    </form>
+    <div class="contenedor_form">
+        <form class="contenedor" id="contenedor">
+            <div class="contenedor-cosas">
+                <h2 class="contenedor-titulo">El resultado es</h2>
+                <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
+                <h2 class="resultado" id="resultado"></h2>
+            </div>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20px;
+    background: linear-gradient(#8ecae6,#219ebc, #023047);
+    height: 95.8vh;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-form{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.form h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subtitulo{
+    margin-right: 5px;
+}
+.numero{
+    height: 30px;
+    border: 2px solid rgb(140, 133, 35);
+    border-radius: 3px;
+}
+.boton{
+    width: 20vw;
+    height: 8vh;
+    border: 2px solid rgb(140, 133, 35);
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+.contenedor_form{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: none;
+    position: fixed;
+    height: 200px;
+    width: 500px;
+    background-color: #e63946;
+    border-radius: 5px;
+    
+}
+.contenedor-cosas{
+    text-align: center;
+}
+.contenedor-titulo{
+    margin-top: 20px;
+}
+.cerrar{
+    position: relative;
+    top: -40px;
+    left: 235px;
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.resultado{
+    font-size: 3rem;
+}
+
+.contenedor h2{
+    color: white;
+}
+
+.contenedor input{
+    color: white;
+}
