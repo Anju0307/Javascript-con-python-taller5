@@ -1,31 +1,47 @@
 addEventListener("DOMContentLoaded", (e) => {
-    let suma = 0,des;
+    function deshabilitar (){
+        contenedor.style.display = "inline-block";
+        document.querySelector("#boton").disabled = true;
+    }
+    function pagar(checkboxData,select){
+        let totalPagar = 0;
+        checkboxData.forEach(ingre=>{
+            ingre=="Pepinillos" ? totalPagar+=150: null;
+            ingre=="Champiñones" ? totalPagar+=150: null;
+            ingre=="Cebolla" ? totalPagar+=150: null;
+        });
+        switch(select){
+            case "peque":
+                totalPagar += 500;
+                deshabilitar();
+                return totalPagar;    
+            case "medi":
+                totalPagar += 1000;
+                deshabilitar();
+                return totalPagar;  
+
+            case "gran":
+                totalPagar += 2000;
+                deshabilitar();
+                return totalPagar;  
+
+            case "":
+                swal("Error", "Debes seleccionar una tamaño de pizza", "error");
+                break
+        }
+    }
     let form = document.querySelector("#form");
-    document.querySelector("#numero1").readOnly = false;
     document.querySelector("#boton").disabled = false;
     let contenedor = document.querySelector("#contenedor");
     let resultado = document.querySelector("#resultado");
-    let deshabilitar = () => {
-        contenedor.style.display = "inline-block";
-        document.querySelector("#numero1").readOnly = true;
-        document.querySelector("#boton").disabled = true;
-    }
-    let descuento = () => {
-        (suma>10000)
-            ? (des =suma-(suma*0.10))
-            (resultado.insertAdjacentHTML("beforebegin", `<h2>Se le aplica un descuento del 10% y el total a pagar es de: ${des}<h2/>`))
-            : (resultado.insertAdjacentHTML("beforebegin", `<h2>${suma}<h2/>`));
-
-    }
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        let num1 = parseInt(document.querySelector("#numero1").value);
+        let checkbox = document.querySelectorAll("input[type='checkbox']");
+        let checkboxData = [];
+        checkbox.forEach(res =>(res.checked)? checkboxData.push(res.value):null);
+        let select = document.querySelector("#select").value;
+        let pagarTodo = pagar(checkboxData,select);
+        resultado.insertAdjacentHTML("beforebegin",`<h3>El total a pagar es de ${pagarTodo} pesos</h3>`);
         form.reset();
-        (num1 > 0)
-            ? (suma += num1)
-            : (num1 < 0) ?
-                (alert("No puedes ingresar un numero menor"))
-                : (deshabilitar())
-                    (descuento());
     })
 })

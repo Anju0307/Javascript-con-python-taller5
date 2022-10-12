@@ -2,50 +2,80 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     margin: 20px;
     background: radial-gradient(#8ecae6,#219ebc, #023047);
     height: 95.8vh;
 }
+
 .titulo{
-    text-align: center;
+    text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+
+.titulo2{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
 }
 .form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.div-form{
+
+.form h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor_tama{
     display: flex;
     align-items: center;
     margin: 20px 0;
 }
-.form h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.contenedor_tama h3{
+    margin-right: 10px;
 }
-.subtitulo{
-    margin-right: 5px;
+
+.div_form{
+    display: flex;
+    align-items: center;
 }
-.numero{
+
+.div_form h3{
+    margin-right: 10px;
+}
+
+select{
+    width: 150px;
     height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
     border: 2px solid rgb(140, 133, 35);
-    border-radius: 3px;
 }
+
 .boton{
-    width: 20vw;
-    height: 8vh;
+    width: 200px;
+    height: 35px;
     border: 2px solid rgb(140, 133, 35);
+    margin-top: 20px;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     cursor: pointer;
 }
+
 .contenedor_form{
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: -20px;
 }
 
 .contenedor{
@@ -57,12 +87,15 @@ body{
     border-radius: 5px;
     
 }
+
 .contenedor-cosas{
     text-align: center;
 }
+
 .contenedor-titulo{
     margin-top: 20px;
 }
+
 .cerrar{
     position: relative;
     top: -40px;
@@ -72,6 +105,7 @@ body{
     border: none;
     cursor: pointer;
 }
+
 .resultado{
     font-size: 3rem;
 }
@@ -82,4 +116,15 @@ body{
 
 .contenedor input{
     color: white;
+}
+
+.contenedor_checkbox{
+    margin-bottom: 10px;
+    display: flex;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.contenedor_checkbox div{
+    margin-right: 15px;
 }

@@ -9,22 +9,47 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Crear un programa que permita al usuario ingresar los montos de las compras de un cliente (se
-        desconoce la cantidad de datos que cargará, la cual puede cambiar en cada ejecución), cortando el
-        ingreso de datos cuando el usuario ingrese el monto 0.
-        Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al
-        finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $10000,
-        se le debe aplicar un 10% de descuento.
+    <h1 class="titulo">Una pizzería, vende sus pizzas en tres tamaños:
+        Pequeña (10 pulga. De diámetro); mediana (12 pulg. De diámetro); y grandes (16 pulg. De diámetro);
+        Una pizza puede ser sencilla (con sólo salsa y carne), o con ingredientes extras, tales como pepinillos,
+        champiñones o cebollas. Los propietarios desean desarrollar un programa que calcule el precio de
+        venta de una pizza, dándole el tamaño y el número de ingredientes extras. El precio de venta será
+        1.5 veces el costo total, que viene determinado por el área de la pizza, más el número de ingredientes.<br>
+        <br>
+    </h1>
+    <h1 class="titulo2">
+        En particular el costo total se calcula sumando:<br>
+        • Un costo fijo de preparación<br>
+        • Un costo base variable que es proporcional al tamaño de la pizza<br>
+        • Un costo adicional por cada ingrediente extra. Por simplicidad se supone que cada ingrediente extra
+        tiene el mismo costo por unidad de área.
     </h1>
     <form id="form" class="form">
-        <div class="div-form">
-            <h3 class="subtitulo">Ingrese el monto de la venta</h3>
-            <input type="number" name="monto" class="numero" id="numero1"  required readonly>
+        <div class="contenedor_tama">
+            <h3>Elija el tamaño de la pizza</h3>
+            <select name="tamaño" id="select">
+                <option value="" selected disabled></option>
+                <option value="peque">Pizza pequeña</option>
+                <option value="medi">Pizza mediana</option>
+                <option value="gran">Pizza grande</option>
+            </select> 
         </div>
-        <div class="div-form">
-            <h3 class="subtitulo">Enviar datos</h3>
-            <input type="submit" name="boton" id="boton" class="boton" disabled>
-        </div>        
+        <h3 class="titulo3">Desea ingredientes extra?</h3>
+        <div class="contenedor_checkbox">
+            <div>
+                <label><input type="checkbox" value="Pepinillos"> Pepinillos</label>
+            </div>
+            <div>
+                <label><input type="checkbox" value="Champiñones"> Champiñones</label>
+            </div>
+            <div>
+                <label><input type="checkbox" value="Cebolla"> Cebolla</label>
+            </div>
+        </div>
+        <div class="div_form">
+            <input type="submit" name="boton" id="boton" class="boton" value="Comprar" disabled>
+        </div>
+             
     </form>
     <div class="contenedor_form">
         <form class="contenedor" id="contenedor">
@@ -35,5 +60,6 @@
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
