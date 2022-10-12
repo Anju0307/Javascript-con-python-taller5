@@ -12,14 +12,9 @@ body{
 .titulo{
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
-.titulo2{
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-}
 .form{
     display: flex;
     flex-direction: column;
@@ -30,32 +25,25 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.contenedor_tama{
+.contenedor_form{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
-.contenedor_tama h3{
-    margin-right: 10px;
+.contenedor_form input{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    border: 2px solid rgb(140, 133, 35);
+    outline: none;
+    font-size: 2rem;
 }
 
 .div_form{
     display: flex;
     align-items: center;
-}
-
-.div_form h3{
-    margin-right: 10px;
-}
-
-select{
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1rem;
-    border: 2px solid rgb(140, 133, 35);
 }
 
 .boton{
@@ -69,7 +57,7 @@ select{
     cursor: pointer;
 }
 
-.contenedor_form{
+.contenedor_modal{
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -85,7 +73,7 @@ select{
     width: 500px;
     background-color: #e63946;
     border-radius: 5px;
-    
+    margin: 20px 0;
 }
 
 .contenedor-cosas{
@@ -110,21 +98,11 @@ select{
     font-size: 3rem;
 }
 
-.contenedor h2{
+.contenedor h3{
+    font-size: 2rem;
     color: white;
 }
 
 .contenedor input{
     color: white;
-}
-
-.contenedor_checkbox{
-    margin-bottom: 10px;
-    display: flex;
-    margin: 20px 0 20px 0;
-    text-align: center;
-}
-
-.contenedor_checkbox div{
-    margin-right: 15px;
 }

@@ -9,54 +9,25 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Una pizzería, vende sus pizzas en tres tamaños:
-        Pequeña (10 pulga. De diámetro); mediana (12 pulg. De diámetro); y grandes (16 pulg. De diámetro);
-        Una pizza puede ser sencilla (con sólo salsa y carne), o con ingredientes extras, tales como pepinillos,
-        champiñones o cebollas. Los propietarios desean desarrollar un programa que calcule el precio de
-        venta de una pizza, dándole el tamaño y el número de ingredientes extras. El precio de venta será
-        1.5 veces el costo total, que viene determinado por el área de la pizza, más el número de ingredientes.<br>
-        <br>
-    </h1>
-    <h1 class="titulo2">
-        En particular el costo total se calcula sumando:<br>
-        • Un costo fijo de preparación<br>
-        • Un costo base variable que es proporcional al tamaño de la pizza<br>
-        • Un costo adicional por cada ingrediente extra. Por simplicidad se supone que cada ingrediente extra
-        tiene el mismo costo por unidad de área.
+    <h1 class="titulo">Desarrolle un programa que invierta un número entero N dado por el usuario. Por ejemplo, de 12345
+        su número invertido es 54321.<br>
     </h1>
     <form id="form" class="form">
-        <div class="contenedor_tama">
-            <h3>Elija el tamaño de la pizza</h3>
-            <select name="tamaño" id="select">
-                <option value="" selected disabled></option>
-                <option value="peque">Pizza pequeña</option>
-                <option value="medi">Pizza mediana</option>
-                <option value="gran">Pizza grande</option>
-            </select> 
-        </div>
-        <h3 class="titulo3">Desea ingredientes extra?</h3>
-        <div class="contenedor_checkbox">
-            <div>
-                <label><input type="checkbox" value="Pepinillos"> Pepinillos</label>
-            </div>
-            <div>
-                <label><input type="checkbox" value="Champiñones"> Champiñones</label>
-            </div>
-            <div>
-                <label><input type="checkbox" value="Cebolla"> Cebolla</label>
-            </div>
+        <div class="contenedor_form">
+            <h3>Ingrese el numero que desea invertir</h3>
+            <input type="number" id="numero" value="numero">
         </div>
         <div class="div_form">
-            <input type="submit" name="boton" id="boton" class="boton" value="Comprar" disabled>
+            <input type="submit" name="boton" id="boton" class="boton" value="Invertir" disabled>
         </div>
              
     </form>
-    <div class="contenedor_form">
+    <div class="contenedor_modal">
         <form class="contenedor" id="contenedor">
             <div class="contenedor-cosas">
-                <h2 class="contenedor-titulo">El resultado es</h2>
+                <h2 class="contenedor-titulo">El numero es</h2>
                 <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
-                <h2 class="resultado" id="resultado"></h2>
+                <h3 class="resultado" id="resultado">El numero invertido es </h3>
             </div>
         </form>
     </div>
