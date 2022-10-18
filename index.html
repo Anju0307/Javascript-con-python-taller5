@@ -9,25 +9,63 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Desarrolle un programa que invierta un número entero N dado por el usuario. Por ejemplo, de 12345
-        su número invertido es 54321.<br>
-    </h1>
+    <h1 class="titulo">En un club se registran de uno en uno los siguientes datos de sus socios: Documento de socio,
+        Apellido y nombre, Edad y Tipo de deporte que practica (1 tenis, 2 rugby, 3 voley, 4 hockey, 5 futbol).
+        Diseñar el código de un algoritmo que permita mostrar por pantalla cuantos socios practican cada
+        deporte y el promedio de edad de los jugadores.<br>
+    </h1><br>
+
+    <h1 class="titulo2">Datos del socio</h1> <br>
     <form id="form" class="form">
         <div class="contenedor_form">
-            <h3>Ingrese el numero que desea invertir</h3>
-            <input type="number" id="numero" value="numero">
+            <h3>Documento del socio</h3>
+            <input type="number" id="documento" required>
+        </div>
+        <div class="contenedor_form">
+            <h3>Nombre del socio</h3>
+            <input type="text" id="nombre" required>
+        </div>
+        <div class="contenedor_form">
+            <h3>Apellido del socio</h3>
+            <input type="text" id="apellido" required>
+        </div>
+        <div class="contenedor_form">
+            <h3>Edad del socio</h3>
+            <input type="number" id="edad" required>
+        </div>
+        <div class="contenedor_form">
+            <h3>Deporte que practica el socio</h3>
+            <select name="deporte" id="deporte">
+                <option value="" selected disabled></option>
+                <option value="tenis">Tenis</option>
+                <option value="rugby">Rugby</option>
+                <option value="voley">Voley</option>
+                <option value="hockey">Hockey</option>
+                <option value="futbol">Futbol</option>
+            </select>
         </div>
         <div class="div_form">
-            <input type="submit" name="boton" id="boton" class="boton" value="Invertir" disabled>
-        </div>
-             
+            <input type="submit" name="botonEnviar" id="botonEnviar" class="boton" value="Enviar" disabled>
+            <input type="submit" name="botonCalcular" id="botonCalcular" class="boton" value="Calcular" disabled>
+        </div>   
     </form>
     <div class="contenedor_modal">
         <form class="contenedor" id="contenedor">
-            <div class="contenedor-cosas">
-                <h2 class="contenedor-titulo">El numero es</h2>
-                <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
-                <h3 class="resultado" id="resultado">El numero invertido es </h3>
+            <h2 class="contenedor-titulo">Datos socios</h2>
+            <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
+            <div class="contenedor-cosas">      
+                <div class="resultadoDep">
+                    <h4 class="titCanDep">Cantidad de socios por deporte</h4>
+                    <h4 class="resultado" id="resultadoSociosTenis"></h4>
+                    <h4 class="resultado" id="resultadoSociosRugby"></h4>
+                    <h4 class="resultado" id="resultadoSociosVoley"></h4>
+                    <h4 class="resultado" id="resultadoSociosHockey"></h4>
+                    <h4 class="resultado" id="resultadoSociosFutbol"></h4>
+                </div>
+                <div class="resultadoEdad">
+                    <h4>Edad promedio de deportes</h4>
+                    <h4 class="resultado" id="resultadoEdad"></h4>
+                </div>
             </div>
         </form>
     </div>

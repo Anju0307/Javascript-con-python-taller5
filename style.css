@@ -12,13 +12,24 @@ body{
 .titulo{
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.titulo2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #eee;
 }
 
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #457b9d;
+    padding: 50px;
+    width: 600px;
+    margin: auto;
 }
 
 .form h3{
@@ -27,30 +38,45 @@ body{
 
 .contenedor_form{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
 .contenedor_form input{
-    height: 50px;
-    width: 200px;
-    margin-top: 20px;
-    border: 2px solid rgb(140, 133, 35);
+    height: 40px;
+    width: 180px;
+    border: 2px solid #1d3557;
     outline: none;
     font-size: 2rem;
+}
+
+.contenedor_form h3{
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contenedor_form select{
+    height: 40px;
+    width: 180px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #1d3557;
 }
 
 .div_form{
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 
 .boton{
     width: 200px;
     height: 35px;
-    border: 2px solid rgb(140, 133, 35);
-    margin-top: 20px;
+    border: 2px solid #1d3557;
+    margin: 0 10px;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
@@ -68,16 +94,21 @@ body{
 
 .contenedor{
     display: none;
-    position: fixed;
-    height: 200px;
-    width: 500px;
+    position: absolute;
     background-color: #e63946;
     border-radius: 5px;
-    margin: 20px 0;
+    top: auto;
+    text-align: center;
 }
 
 .contenedor-cosas{
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+.titCanDep{
+    border-bottom: 1px solid black;
 }
 
 .contenedor-titulo{
@@ -87,22 +118,32 @@ body{
 .cerrar{
     position: relative;
     top: -40px;
-    left: 235px;
+    left: 46%;
     font-size: 1.7rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
+.resultadoDep{
+    padding: 15px 20px;
+    border-right: 1px solid black;
+}
+
+.resultadoDep .resultadoEdad{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.contenedor_modal h4{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contenedor_modal input{
+    color: white;
+}
+
 .resultado{
-    font-size: 3rem;
-}
-
-.contenedor h3{
-    font-size: 2rem;
-    color: white;
-}
-
-.contenedor input{
-    color: white;
+    margin-top: 5px;
 }
