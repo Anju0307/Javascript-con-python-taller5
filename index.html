@@ -9,46 +9,26 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Realice un Algoritmo que permita calcular y dar como salida el promedio de bateo (PB) de cada
-        jugador perteneciente a un equipo de 10 jugadores, tomando en cuenta que se tienen los siguientes
-        datos:
-        • Nombre del Jugador
-        • Veces al Bate (VB)
-        • Hit Conectados (HIT)
-        • Extrabases Conectadas (EXT)
-        • Cantidad de Sacrificios (S)
-        • Cantidad de Bases por Bolas Recibidas (BB)<br>
+    <h1 class="titulo">Cinco miembros de un club contra la obesidad desean saber cuánto han bajado o subido de peso
+desde la última vez que se reunieron. Para esto se debe realizar un ritual de pesaje en donde cada
+uno se pesa en diez básculas distintas para así tener el promedio más exacto de su peso. Si existe
+diferencia positiva entre este promedio de peso y el peso de la última vez que se reunieron, significa
+que subieron de peso. Pero si la diferencia es negativa, significa que bajaron. Lo que el problema
+requiere es que por cada persona se imprima un letrero que diga: “SUBIO” o “BAJO” y la cantidad de
+kilos que subió o bajo de peso.<br>
     </h1><br>
 
-    <h1 class="titulo2">Datos del socio</h1> <br>
+    <h1 class="titulo2">Peso</h1> <br>
     <form id="form" class="form">
+
         <div class="contenedor_form">
-            <h3>Nombre del jugador</h3>
-            <input type="text" id="nombre" required>
-        </div>
-        <div class="contenedor_form">
-            <h3>Veces al bate</h3>
-            <input type="number" id="veces" required>
+            <h3>Peso anterior</h3>
+            <input type="number" id="anterior" required>
         </div>
 
         <div class="contenedor_form">
-            <h3>Hit conectados</h3>
-            <input type="number" id="conectados" required>
-        </div>
-
-        <div class="contenedor_form">
-            <h3>Extrabases conectadas</h3>
-            <input type="number" id="extra" required>
-        </div>
-
-        <div class="contenedor_form">
-            <h3>Cantidad de sacrificios</h3>
-            <input type="number" id="sacrificios" required>
-        </div>
-
-        <div class="contenedor_form">
-            <h3>Bases por bolas recibidas</h3>
-            <input type="number" id="recibidas" required>
+            <h3>Peso nuevo</h3>
+            <input type="number" id="nuevo" required>
         </div>
 
         <div class="div_form">
@@ -57,12 +37,11 @@
     </form>
     <div class="contenedor_modal">
         <form class="contenedor" id="contenedor">
-            <h2 class="contenedor-titulo">Datos socios</h2>
+            <h2 class="contenedor-titulo">Peso</h2>
             <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
             <div class="contenedor-cosas">      
                 <div class="resultadoDep">
-                    <h4 class="titRes" id="titRes">Stats del jugador </h4>
-                    <h4 class="resultado" id="resultado">El promedio de bateo del jugador es de </h4>
+                    <h4 class="resultado" id="resultado">Su peso </h4>
                 </div>
             </div>
         </form>

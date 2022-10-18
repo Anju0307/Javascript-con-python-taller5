@@ -95,7 +95,7 @@ body{
 .contenedor-cosas{
     display: flex;
     justify-content: space-evenly;
-    padding: 15px 20px;
+    padding: 5px 20px;
 }
 
 .contenedor-titulo{
@@ -113,15 +113,11 @@ body{
     color: white;
 }
 
-.resultadoDep{
-    padding: 15px 20px;
-}
-
 .contenedor_modal h4{
     font-size: 1.5rem;
     color: white;
 }
 
 .resultado{
-    margin-top: 5px;
+    padding-bottom: 10px;
 }
