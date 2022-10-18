@@ -9,43 +9,49 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="titulo">En un club se registran de uno en uno los siguientes datos de sus socios: Documento de socio,
-        Apellido y nombre, Edad y Tipo de deporte que practica (1 tenis, 2 rugby, 3 voley, 4 hockey, 5 futbol).
-        Diseñar el código de un algoritmo que permita mostrar por pantalla cuantos socios practican cada
-        deporte y el promedio de edad de los jugadores.<br>
+    <h1 class="titulo">Realice un Algoritmo que permita calcular y dar como salida el promedio de bateo (PB) de cada
+        jugador perteneciente a un equipo de 10 jugadores, tomando en cuenta que se tienen los siguientes
+        datos:
+        • Nombre del Jugador
+        • Veces al Bate (VB)
+        • Hit Conectados (HIT)
+        • Extrabases Conectadas (EXT)
+        • Cantidad de Sacrificios (S)
+        • Cantidad de Bases por Bolas Recibidas (BB)<br>
     </h1><br>
 
     <h1 class="titulo2">Datos del socio</h1> <br>
     <form id="form" class="form">
         <div class="contenedor_form">
-            <h3>Documento del socio</h3>
-            <input type="number" id="documento" required>
-        </div>
-        <div class="contenedor_form">
-            <h3>Nombre del socio</h3>
+            <h3>Nombre del jugador</h3>
             <input type="text" id="nombre" required>
         </div>
         <div class="contenedor_form">
-            <h3>Apellido del socio</h3>
-            <input type="text" id="apellido" required>
+            <h3>Veces al bate</h3>
+            <input type="number" id="veces" required>
         </div>
+
         <div class="contenedor_form">
-            <h3>Edad del socio</h3>
-            <input type="number" id="edad" required>
+            <h3>Hit conectados</h3>
+            <input type="number" id="conectados" required>
         </div>
+
         <div class="contenedor_form">
-            <h3>Deporte que practica el socio</h3>
-            <select name="deporte" id="deporte">
-                <option value="" selected disabled></option>
-                <option value="tenis">Tenis</option>
-                <option value="rugby">Rugby</option>
-                <option value="voley">Voley</option>
-                <option value="hockey">Hockey</option>
-                <option value="futbol">Futbol</option>
-            </select>
+            <h3>Extrabases conectadas</h3>
+            <input type="number" id="extra" required>
         </div>
+
+        <div class="contenedor_form">
+            <h3>Cantidad de sacrificios</h3>
+            <input type="number" id="sacrificios" required>
+        </div>
+
+        <div class="contenedor_form">
+            <h3>Bases por bolas recibidas</h3>
+            <input type="number" id="recibidas" required>
+        </div>
+
         <div class="div_form">
-            <input type="submit" name="botonEnviar" id="botonEnviar" class="boton" value="Enviar" disabled>
             <input type="submit" name="botonCalcular" id="botonCalcular" class="boton" value="Calcular" disabled>
         </div>   
     </form>
@@ -55,16 +61,8 @@
             <input type="submit" name="cerrar" value="X" class="cerrar" id="cerrar">
             <div class="contenedor-cosas">      
                 <div class="resultadoDep">
-                    <h4 class="titCanDep">Cantidad de socios por deporte</h4>
-                    <h4 class="resultado" id="resultadoSociosTenis"></h4>
-                    <h4 class="resultado" id="resultadoSociosRugby"></h4>
-                    <h4 class="resultado" id="resultadoSociosVoley"></h4>
-                    <h4 class="resultado" id="resultadoSociosHockey"></h4>
-                    <h4 class="resultado" id="resultadoSociosFutbol"></h4>
-                </div>
-                <div class="resultadoEdad">
-                    <h4>Edad promedio de deportes</h4>
-                    <h4 class="resultado" id="resultadoEdad"></h4>
+                    <h4 class="titRes" id="titRes">Stats del jugador </h4>
+                    <h4 class="resultado" id="resultado">El promedio de bateo del jugador es de </h4>
                 </div>
             </div>
         </form>

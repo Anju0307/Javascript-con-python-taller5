@@ -56,15 +56,6 @@ body{
     color: #fff;
 }
 
-.contenedor_form select{
-    height: 40px;
-    width: 180px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 2px solid #1d3557;
-}
 
 .div_form{
     display: flex;
@@ -104,11 +95,7 @@ body{
 .contenedor-cosas{
     display: flex;
     justify-content: space-evenly;
-    padding-right: 20px;
-}
-
-.titCanDep{
-    border-bottom: 1px solid black;
+    padding: 15px 20px;
 }
 
 .contenedor-titulo{
@@ -123,24 +110,15 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 .resultadoDep{
     padding: 15px 20px;
-    border-right: 1px solid black;
-}
-
-.resultadoDep .resultadoEdad{
-    font-size: 2.5rem;
-    margin-top: 10px;
 }
 
 .contenedor_modal h4{
     font-size: 1.5rem;
-    color: white;
-}
-
-.contenedor_modal input{
     color: white;
 }
 
